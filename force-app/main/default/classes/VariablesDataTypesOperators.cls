@@ -22,6 +22,8 @@
  */
 
 public with sharing class VariablesDataTypesOperators {
+
+    private static Integer millisecondsPerMinute = 60000; // Make this value a constant
     /**
      * Question 1
      * Performs addition of two numbers.
@@ -108,7 +110,6 @@ public with sharing class VariablesDataTypesOperators {
         if (num != null) {
             isEven = (Math.mod(num, 2) == 0);
         }
-
         return isEven; // Replace null with the variable you used to store the result
     }
 
@@ -205,7 +206,6 @@ public with sharing class VariablesDataTypesOperators {
      * @param minutes The number of minutes.
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
-    private static Integer millisecondsPerMinute = 60000; // Make this value a constant
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         Integer milliseconds;
         if (minutes != null) {
@@ -245,7 +245,6 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer adjustOrderOfOperations1(Integer a, Integer b, Integer c) {
         // Add parentheses around the addition operation so that it is performed before multiplication
         Integer result = (a + b) * c;
-
         // Return the result
         return result; // Replace null with the variable you used to store the result
     }
@@ -260,7 +259,6 @@ public with sharing class VariablesDataTypesOperators {
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
         Integer answer = 48 - ((15 + 5) * 2);
-        
         return answer; // Replace null with the variable you used to store the result
     }
 
@@ -281,7 +279,6 @@ public with sharing class VariablesDataTypesOperators {
     public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
         Double result = (a * b - c) / (Double) d + e;
-
         return result; // Replace null with the variable you used to store the result
     }
 
@@ -301,7 +298,6 @@ public with sharing class VariablesDataTypesOperators {
         if (fahrenheit != null) {
             celsius = (fahrenheit - substractFactor) * multiplyFactor / divideFactor;
         }
-    
         return celsius; // Replace null with the variable you used to store the result
     }
 
@@ -322,13 +318,11 @@ public with sharing class VariablesDataTypesOperators {
         if (a != null && b != null && b>0) {
             divisionResult = a / b;
         }
-
         // Write the code for type casting the divisionResult to an Integer
         Integer roundedResult = null;
         if (divisionResult != null) {
             roundedResult = (Integer) Math.floor(divisionResult);
         }
-
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
@@ -367,7 +361,6 @@ public with sharing class VariablesDataTypesOperators {
             weeklyPaycheck = calculateWeeklyPaycheck(hourlyRate, numberOfHours);
             monthlyPaycheck = weeklyPaycheck * 4;    
         }
-        
         return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
 
