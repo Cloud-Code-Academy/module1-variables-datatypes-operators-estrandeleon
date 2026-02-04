@@ -37,7 +37,7 @@ public with sharing class VariablesDataTypesOperators {
         Integer resutlSum = null;
         if (a != null && b != null) {
             resutlSum = a + b;
-        }  
+        }
         return resutlSum; // Replace null with the variable you used to store the result
     }
 
@@ -359,7 +359,7 @@ public with sharing class VariablesDataTypesOperators {
         Decimal monthlyPaycheck = null;
         if (hourlyRate != null && numberOfHours != null) {
             weeklyPaycheck = calculateWeeklyPaycheck(hourlyRate, numberOfHours);
-            monthlyPaycheck = weeklyPaycheck * 4;    
+            monthlyPaycheck = weeklyPaycheck * 4;
         }
         return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
